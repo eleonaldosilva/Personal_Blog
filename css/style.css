@@ -4,20 +4,19 @@ body{
 
 header div{
 	text-align:center;
-	margin:0 auto 0 auto;
+	margin:0 auto 10px auto;
 	}
 
 header img{
 	border:solid 1px #ffffff;
 	background-color:#728ED6;
 	box-shadow: 2px 2px 4px #000000;
-	margin:0 auto 0 auto;
 	width:83%;
 }
 
 /*alterando o article de todas as paginas*/
 article{
-	margin:0 auto 0 auto;
+	margin:0 auto 10px auto;
 	border:solid 1px #ffffff;
 	padding:20px;
 	box-shadow: 2px 2px 4px #000000;
@@ -34,32 +33,34 @@ article h1,h2{
 
 article div figure {
 	text-align:center;
+	margin:5px;
+	
 }
 
 article figure .logo{
 	width:220px;
 	height:220px;
-	margin:10px;
+	margin:5px;
 	box-shadow: 2px 2px 4px #000000;
 }
 
 artile div .logo{
-	width:230px;
-	height:230px;
+	max-width:230px;
+	max-height:230px;
 	margin:0 auto 0 auto;
 	text-align:center:
 }
 
 article figure .fatec{
-	width:800px;
-	height:400px;
+	width:80%;
+	height:70%;
 	box-shadow: 2px 2px 4px #000000;
 	text-align:center;
 	margin:10px;
 }
 
 iframe{
-	width:1024px;
+	width:100%;
 	height:450px;
 }
 
@@ -69,9 +70,10 @@ div .conteudo{
 	width:200px;
 	text-align:center;
 	margin:10px;
-	display:table;
+	display:inline;
 	float:left;
 	padding:5px;
+	
 	
 	
 }
@@ -79,82 +81,65 @@ div .conteudo{
 div .conteudo img{	
 	width:150px;
 	height:150px;
+	margin:0px;
 	
 }
-input,textarea,select{
+textarea,select{
 	display:block;
 	margin-bottom:10px;
 	margin-left:10px;
+	width:70%;	
+}
+input{
+	display:block;
+	margin-bottom:10px;
+	margin-left:10px;
+	width:30%;
 	
 }
+
 input.dis_inline{
 	display:inline-block;
 }
 
+div form{
+	width:100%;
+}
 
 
 /**fim da alteracao do article/
 
+
 /*Começo Menu*/
-*{
-	margin:0;
-	padding:0;
+.menu{
+	background:#728ED6;
+	box-shadow:1px 1px 3px #000000; 
+	margin:0 auto 10px auto;
+	width:83%;
+	min-height:20px;
+	text-align:center;
+	
+}
+.menu li{
+	display:inline-flex;
+	margin-left:20px;
+	font-size:20px;
+	
+	
+}
+.menu li a{
+	color:#000000;
+	text-align:center;
+	padding:18px;
 }
 
-#check{
-	display:none;
-	
-	
-}
-#icone{
-	cursor:pointer;
-	padding:15px;
-	position:fixed;
-	z-index:1;
-}
-
-.barra{
-	background-color:#728ED6;
-	height:100%;
-	width:300px;
-	position:fixed;
-	transition:all .2s linear;
-	left:-300px;
-}
-nav{
-	
-	width:100%;
-	position:absolute;
-	top:60px;
-	
-}
-nav a{
-	text-decoration:none;
-}
-.link{
-	background-color:#234496;
+.menu li a:hover{
+	color:#ffffff;
 	padding:20px;
-	font-family:'Arial';
-	font-size:12pt;
-	transition:all .2s linear;
-	color:#f4f4f9;
-	border-bottom:2px solid #222;
-	opacity:0;
-	
+	background:#01002E;
+	font-size:20px;
 }
 
-.link:hover{
-	background-color:#172D63;
-}
-
-#check:checked ~ .barra{
-	transform: translateX(300px);
-}
-#check:checked ~ .barra nav a .link{
-	opacity:1;
-	
-	transition-delay:.1s;
-}
 /*Fim Menu*/
 
 
