@@ -1,21 +1,51 @@
 body{
-	background-color:#ffffff;
+	background-color:#484c57;
 }
 
-header div{
+/*Começo Menu*/
+.menu{
+	background:#728ED6;
+	box-shadow:1px 1px 3px #00000059; 
+	margin:0 auto 10px;
+	width:83%;
+	min-height:20px;
+	text-align:center;
+	
+}
+.menu li{
+	display:inline-flex;
+	margin:auto 10px ;
+	font-size:20px;
+	
+	
+}
+.menu li a{
+	color: #000000;
+	text-align:center;
+	padding:18px;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color:#ffffff;
+	background:#2E3957;
+}
+
+/*Fim Menu*/
+
+header {
 	text-align:center;
 	margin:0 auto 10px auto;
-	}
+}
 
 header img{
-	border:solid 1px #ffffff;
-	background-color:#728ED6;
-	box-shadow: 2px 2px 4px #000000;
+	box-shadow:1px 1px 3px #B7C2DD; 
 	width:83%;
 }
 
-/*alterando o article de todas as paginas*/
-article{
+/*alterando o main de todas as paginas*/
+main{
+	background: #ffffff;
 	margin:0 auto 10px auto;
 	border:solid 1px #ffffff;
 	padding:20px;
@@ -26,35 +56,28 @@ article{
 	
 }
 
-article h1,h2{
+main h1,h2{
 	text-align:center;
 	font-family:'Arial';
 }
 
-article div figure {
+main div figure {
 	text-align:center;
 	margin:5px;
 	
 }
 
-article figure .logo{
+main figure .logo{
 	width:220px;
 	height:220px;
-	margin:5px;
-	box-shadow: 2px 2px 4px #000000;
+	padding:5px;
+	text-align:center;
 }
 
-artile div .logo{
-	max-width:230px;
-	max-height:230px;
-	margin:0 auto 0 auto;
-	text-align:center:
-}
-
-article figure .fatec{
+main figure .fatec{
 	width:80%;
 	height:70%;
-	box-shadow: 2px 2px 4px #000000;
+
 	text-align:center;
 	margin:10px;
 }
@@ -65,17 +88,14 @@ iframe{
 }
 
 div .conteudo{
-	box-shadow:1px 1px 3px #000000; 
-	height:200px;
-	width:200px;
+	box-shadow:1px 1px 3px #000000;
+	height: 200px;
+	width: 200px;
 	text-align:center;
 	margin:10px;
 	display:inline;
-	float:left;
+	float: left;
 	padding:5px;
-	
-	
-	
 }
 
 div .conteudo img{	
@@ -98,7 +118,7 @@ input{
 	
 }
 
-input.dis_inline{
+input .dis_inline{
 	display:inline-block;
 }
 
@@ -106,50 +126,13 @@ div form{
 	width:100%;
 }
 
-
-/**fim da alteracao do article/
-
-
-/*Começo Menu*/
-.menu{
-	background:#728ED6;
-	box-shadow:1px 1px 3px #000000; 
-	margin:0 auto 10px auto;
-	width:83%;
-	min-height:20px;
-	text-align:center;
-	
-}
-.menu li{
-	display:inline-flex;
-	margin-left:20px;
-	font-size:20px;
-	
-	
-}
-.menu li a{
-	color:#000000;
-	text-align:center;
-	padding:18px;
-}
-
-.menu li a:hover{
-	color:#ffffff;
-	padding:20px;
-	background:#01002E;
-	font-size:20px;
-}
-
-/*Fim Menu*/
-
+/*fim da alteracao do article*/
 
 footer{
-	clear:both;
 	text-align:center;
-	border:solid 1px #ffffff;
 	background-color:#728ED6;
-	box-shadow: 2px 2px 4px #000000;
-	margin:0 auto 0 auto;
+	box-shadow:1px 1px 3px #B7C2DD; 
+	margin:0 auto ;
 	width:80%;
 	padding:20px;
 }
